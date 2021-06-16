@@ -1,0 +1,16 @@
+{
+  "data_dir": "/data/no",
+  "target_column": "hateful",
+  "text_column": "cleaned",
+  "model_name" : "bert-base-multilingual-uncased",
+  "batch_size" :  16,
+  "init_lr" : 5e-05,
+  "end_lr" : 0,
+  "num_warmup_steps": 150,
+  "num_epochs" :   3,
+  "max_seq_length" : 512,
+  "model_folder" : "models/hate/mbert/uncased/optimized/no_cleaned/",
+  "trainOrEval": "train",
+  "translator":"none",
+  "evaluate": 1
+}

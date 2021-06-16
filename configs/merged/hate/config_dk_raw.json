@@ -1,0 +1,15 @@
+{
+  "data_dir": "/data/no",
+  "target_column": "hateful",
+  "text_column": "cleaned",
+  "model_name" : "NbAiLab/nb-bert-large",
+  "batch_size" :  32,
+  "init_lr" : 2e-05,
+  "end_lr" : 0,
+  "num_epochs" :   4,
+  "max_seq_length" : 256,
+  "model_folder" : "models/merged/hate/dk_raw/",
+  "trainOrEval": "train",
+  "translator":"cleaned",
+  "evaluate": 1
+}

@@ -1,0 +1,15 @@
+{
+  "data_dir": "/data/no",
+  "target_column": "hateful",
+  "text_column": "cleaned",
+  "model_name" : "ltgoslo/norbert",
+  "batch_size" :  16,
+  "init_lr" : 5e-05,
+  "end_lr" : 0,
+  "num_epochs" :   4,
+  "max_seq_length" : 512,
+  "model_folder" : "models/hate/norbert/optimized/no_cleaned/",
+  "trainOrEval": "train",
+  "translator":"none",
+  "evaluate": 1
+}
