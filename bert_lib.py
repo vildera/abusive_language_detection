@@ -383,6 +383,10 @@ def run_hyperparameter_optimization(config, search_params = {'init_lr': [5e-5, 3
                              'end_lr': config['end_lr'], "max_seq_length": config["max_seq_length"], "trainOrEval": config["trainOrEval"],
                              "translator": config["translator"], "model_name": config["model_name"], "model_folder": config["model_folder"]}
 
+                if "train_dk" in config:
+                    gs_config["train_dk"] = config["train_dk"]
+                if "undersample" in config:
+                    gs_config["undersample"] = config["undersample"]
                 # Running 5 fold CV
                 acc, f1, p, r, cm = run_bert_cv(gs_config, k_fold=5, summary=False)
 
